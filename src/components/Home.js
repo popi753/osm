@@ -46,7 +46,7 @@ export default  function Home(){
             <p className="p"> აირჩიე შენი გუნდი </p>
             <div className="teams">
 
-                {list && list.map((team,index)=>{
+                {list ? list.map((team,index)=>{
                     return(
                             <div className="team" key={index} 
                             onClick={async()=>{
@@ -73,7 +73,8 @@ export default  function Home(){
                                 >{team.manager}</p>
                             </div>
                     )
-                })}
+                })
+                : <div className="loading">Loading...</div>}
             </div>
         </div>
     )

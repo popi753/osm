@@ -8,6 +8,9 @@
     align-items: center;
   }
 
+.loading{
+  font-size: 40px;
+}
 
 .p{
     font-size: 50px;

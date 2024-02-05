@@ -81,9 +81,11 @@ useEffect(()=>{
     "margin": "50px 0 25px 25px"
                         }}
                         >შენი არჩეული ცხრილი :</p>
+
+         {list ?
                     <div className="container">
                         <div className="ranking">
-                                        {list && list.map((element) => {
+                                          {list.map((element) => {
                                             return (
                                                 <ChosenGroup
                                                 key={element.rank}
@@ -91,9 +93,11 @@ useEffect(()=>{
                                                 />
                                             );
                                         })}
-                        </div>
+                                        </div>
     
-                    </div>
+    </div>
+                                        :<div className="loading">Loading...</div> }
+                        
     
     
     
