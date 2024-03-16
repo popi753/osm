@@ -50,7 +50,7 @@ export default  function Home(){
                     return(
                             <div className="team" key={index} 
                             onClick={async()=>{
-                                if (team.id == 47) {
+                                if (team.id == 490) {
                                     team.manager = "GOD"
                                 }
                                 
@@ -60,14 +60,12 @@ export default  function Home(){
                                 <p   
                                 style={{
                                     "color":
-                                    // "#F9A620"
                                     "#138A36"
                                 }}
                                 >{team.name}</p>
                                 <p   
                                 style={{
                                     "color":
-                                    // "#FF3A20"
                                     "#04E824"
                                 }}
                                 >{team.manager}</p>
