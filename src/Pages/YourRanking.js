@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-// import "../styles/yourRanking.css";
 
 
 export default function YourRanking() {
@@ -24,7 +23,6 @@ async function fetchRanking() {
           )
           const data = await response.json() 
           setList(data)
-        //   console.log(data)
         
       } catch (error) {
         window.alert(error+"/try later")
@@ -63,7 +61,7 @@ useEffect(()=>{
         <p>{userTeam.manager}</p>
     </div>
 
-    <button className="logout"
+    <button className="logout-btn"
     onClick={()=>{
         window.localStorage.removeItem("person")
         window.location.href = "/";
@@ -74,13 +72,9 @@ useEffect(()=>{
     
     
                 <div >
-                        <p
-                        style={{
-                            "fontSize": "25px",
-    "fontWeight": "500",
-    "margin": "50px 0 25px 25px"
-                        }}
-                        >შენი არჩეული ცხრილი :</p>
+                        <p className="p-text">
+                            შენი არჩეული ცხრილი :
+                        </p>
 
          {list ?
                     <div className="container">
@@ -109,7 +103,7 @@ useEffect(()=>{
 }
 
 
-export function ChosenGroup({ handleClick, handleDelete, team, deleteable }) {
+export function ChosenGroup({team}) {
     return (
         <div className="ranking-team">
             <span >{team.rank}.</span>

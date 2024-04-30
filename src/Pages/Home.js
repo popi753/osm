@@ -33,14 +33,6 @@ export default  function Home(){
 
 
     
-
-
-  
-    
-
-    
-
-
     return(
         <div className="Home">
             <p className="p"> აირჩიე შენი გუნდი </p>
@@ -50,7 +42,7 @@ export default  function Home(){
                     return(
                             <div className="team" key={index} 
                             onClick={async()=>{
-                                if (team.id == 490) {
+                                if (team.id == 548) {
                                     team.manager = "GOD"
                                 }
                                 

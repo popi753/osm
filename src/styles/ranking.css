@@ -1,5 +1,4 @@
 .box{
-  background-color: #282C34;
   min-width: 600px;
 }
 
@@ -13,6 +12,12 @@
   p {
     font-size: 3rem;
   }
+}
+
+.p-text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 50px 0 25px 25px
 }
 
 .logout-btn{
@@ -90,9 +95,6 @@ span:first-child {
 }
 
 .chooseTeam{
-  /* position: absolute;
-  top: -2px;
-  right: -2px; */
 
     position: sticky;
     top: 0;
@@ -137,7 +139,6 @@ span:first-child {
   opacity:1;
   max-height: 1185px;
 
-  /* right: -11.7%; */
 
   
 }

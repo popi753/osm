@@ -2,9 +2,9 @@ import './App.css';
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from     "./components/Home";
-import Ranking from './components/Ranking';
-import YourRanking from './components/YourRanking';
+import Home from     "./Pages/Home";
+import Ranking from './Pages/Ranking';
+import YourRanking from './Pages/YourRanking';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
               <Routes>
 
-                <Route path="/" element={<Home />} />
+                 <Route path="/" element={<Home />} />
                  <Route path="/ranking" element={<Ranking />} />
                  <Route path="/yourRanking" element={<YourRanking />} />
 
